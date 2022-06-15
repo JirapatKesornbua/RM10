@@ -9,8 +9,8 @@ class Action:
         data = c.getNamehard_ware()
         return data
 
-    def updatehard_ware(id,status):
-        t = c.updatahard_ware(id, status)
+    def updatehard_ware(id,status,value):
+        t = c.updatahard_ware(id, status,value)
         if(t == True):
             data = c.gethard_ware_ID(id)
         else:

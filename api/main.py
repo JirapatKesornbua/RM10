@@ -52,8 +52,8 @@ def diff():
     return data
 
 @app.get("/update_status_hw")
-def update_status_hw(id,status):
-    data = a.updatehard_ware(id,status)
+def update_status_hw(id,status,value):
+    data = a.updatehard_ware(id,status,value)
     return data
 
 @app.get("/add_hw")
